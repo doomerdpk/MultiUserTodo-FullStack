@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do</title>
+    <link
+      rel="icon"
+      href="https://imgs.search.brave.com/8b0038zJcFNJNQ-SslJYxQr6jwhNPXCcg2RPQZFyWRc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9hcHBp/Z28uY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA5L1Rv/ZG8tQ2xvdWQtRmVl/bC1Nb3JlLUFjY29t/cGxpc2guc3Zn"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="todo_frontend.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1 id="Header" style="text-align: center; margin-bottom: 50px">
+      Multi User To Do
+    </h1>
+    <div id="signin-page" style="align-items: center; margin-top: 15%">
+      <div
+        id="signin"
+        style="width: 30%; margin-right: 2%; position: absolute; right: 0"
+      >
+        <div class="card text-center">
+          <div class="card-header" style="background-color: Coral">
+            Login Here...
+          </div>
+          <div class="card-body" style="background-color: Khaki">
+            <input id="signin-username" type="text" placeholder="Username..." />
+            <br />
+            <input id="signin-password" type="text" placeholder="Password..." />
+            <br />
+            <button class="homebtn" type="button" onclick="SignIn()">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="signup" style="width: 30%; margin-left: 2%">
+      <div class="card text-center">
+        <div class="card-header" style="background-color: Coral">
+          Sign-up Here...
+        </div>
+        <div class="card-body" style="background-color: Khaki">
+          <input id="signup-username" type="text" placeholder="Username..." />
+          <br />
+          <input id="signup-password" type="text" placeholder="Password..." />
+          <br />
+          <button class="homebtn" type="button" onclick="SignUp()">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="get-todos"
+      style="
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: -10%;
+      "
+    >
+      <div id="user-todos" style="margin-right: 5%; margin-left: 5%"></div>
+      <div id="logout" style="text-align: center"></div>
+    </div>
+
+    <script src="todo_frontend.js"></script>
+  </body>
+</html>

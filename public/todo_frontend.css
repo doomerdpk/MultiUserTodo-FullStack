@@ -1,0 +1,69 @@
+body {
+  background-image: url("https://wallpaperaccess.com/full/1489369.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+}
+
+#signup {
+  margin-bottom: 50px;
+}
+
+#signup-username {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1 px solid black;
+}
+
+#signup-password {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1 px solid black;
+}
+
+#signin-username {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1 px solid black;
+}
+
+#signin-password {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1 px solid black;
+}
+
+.homebtn {
+  width: 100px;
+  height: 25px;
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.todosbtn {
+  width: 150px;
+  height: 25px;
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.edit-todos {
+  width: 180px;
+  height: 25px;
+  border: 1 px solid black;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
